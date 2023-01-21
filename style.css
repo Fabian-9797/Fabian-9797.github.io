@@ -24,6 +24,12 @@ h1{
     color:black;
 }
 
+.navegacion {
+    text-decoration: underline!important;
+    box-shadow: none!important;
+    color:blue;
+}
+
 img {width:180px; height: 180px;}
 
 section {
