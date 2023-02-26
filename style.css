@@ -43,6 +43,10 @@ section {
     background-image: url("https://img.freepik.com/free-photo/pink-shiny-textured-paper-background_53876-101392.jpg");
 }
 
+.item {
+    text-align:right;
+}
+
 .formacion {
     width: 110px;
     height: 110px;
