@@ -32,6 +32,8 @@ h1{
 
 img {width:180px; height: 180px;}
 
+hr {color: black;}
+
 section {
     width: 1000px;
     border: 15px solid orange;
