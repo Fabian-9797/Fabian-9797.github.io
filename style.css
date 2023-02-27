@@ -9,7 +9,8 @@ p {
 }
 
 .circular-square {
-    border-radius: 50%
+    border-radius: 50%;
+    cursor: none;
 }
 
 h1{
