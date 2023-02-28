@@ -16,12 +16,18 @@
           document.getElementById("demo").innerHTML = "Carta de presentación: Estimado/a responsable de reclutamiento, le escribo en relación a la oferta publicada en el portal ContrátameYa considerando que mi experiencia y conocimientos me convierten en el candidato ideal para el puesto.";
         }
         </script>
+    <script>
+        function myFunction() {
+            document.getElementById("traduccion").innerHTML = "I consider myself passionate about engineering. I am a creative person, very good in terms of planning technological projects and very decisive in a context of constant changes and transformations.";
+        }
+    </script>
         <button type="button" onclick="document.getElementById('hora').innerHTML = Date()">Día y hora actual</button>
         <button type="button" onclick="document.getElementById('persona').style.display='none'">Ocultar título</button>
         <button type="button" onclick="document.getElementById('gracias').style.display='block'">Agradecimientos</button>
 </head>
 <body>
     <button type="button" onclick="myFunction()">Ver presentación</button>
+    <button type="button" onclick="myFunction()">About Me</button>
     <section id="color">
         <header> 
         <h1 id="persona">Eduardo Nicolás García</h1>
@@ -48,7 +54,7 @@
 
             <!-- A continuación puse las palabras más importantes en cursiva y en negrita como recomiendan muchos reclutadores
             destacar en los currículums-->
-        <p class="ancho">Me considero un apasionado de la ingeniería. Soy una persona <b><i>creativa</i></b>, muy bueno en cuanto 
+        <p class="ancho" id="traduccion">Me considero un apasionado de la ingeniería. Soy una persona <b><i>creativa</i></b>, muy bueno en cuanto 
             a la <b><i>planificación</i></b> de proyectos tecnológicos y muy <b><i>resolutivo</i></b> en un contexto de constantes cambios 
             y transformaciones. </p>
         <hr>
