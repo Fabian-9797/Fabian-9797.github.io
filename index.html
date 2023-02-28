@@ -18,31 +18,7 @@
         </script>
     
     <script>
-        function mapInitialize() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition( set_position_in_google_map );
-            } else {
-                alert("Tu navegador no soporta el API de geolocalización. Actualiza a un navegadormás moderno.");
-            }
-        }
-        function set_position_in_google_map( position ) {
-            var crds = position.coords;
-            var mapPosition = new google.maps.LatLng(crds.latitude, crds.longitude);
-            var mapOptions = {
-                zoom: 15,
-                center: mapPosition
-            };
-            var map = new google.maps.Map(
-                document.getElementById('map-canvas'),
-                mapOptions
-                );
-            var infowindow = new google.maps.InfoWindow({
-                map: map,
-                position: mapPosition,
-                content: 'Localización encontrada utilizando Geolocation API.'
-            });
-            
-        }
+        
     </script>
         <button type="button" onclick="document.getElementById('hora').innerHTML = Date()">Día y hora actual</button>
         <button type="button" onclick="document.getElementById('persona').style.display='none'">Ocultar título</button>
