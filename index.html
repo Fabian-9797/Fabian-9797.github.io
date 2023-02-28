@@ -18,7 +18,28 @@
         </script>
     
     <script>
-        
+        const funcionInit = () => {
+	if (!"geolocation" in navigator) {
+		return alert("Tu navegador no soporta el acceso a la ubicación. Intenta con otro");
+	}
+
+	const onUbicacionConcedida = ubicacion => {
+		console.log("Tengo la ubicación: ", ubicacion);
+	}
+  
+	const onErrorDeUbicacion = err => {
+		console.log("Error obteniendo ubicación: ", err);
+	}
+
+	const opcionesDeSolicitud = {
+		enableHighAccuracy: true,
+		maximumAge: 0,
+		timeout: 5000
+	};
+	
+	navigator.geolocation.getCurrentPosition(onUbicacionConcedida, onErrorDeUbicacion, opcionesDeSolicitud);
+
+};
     </script>
         <button type="button" onclick="document.getElementById('hora').innerHTML = Date()">Día y hora actual</button>
         <button type="button" onclick="document.getElementById('persona').style.display='none'">Ocultar título</button>
