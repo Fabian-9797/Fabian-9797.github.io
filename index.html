@@ -21,6 +21,17 @@
             document.getElementById("traduccion").innerHTML = "I consider myself passionate about engineering. I am a creative person, very good in terms of planning technological projects and very decisive in a context of constant changes and transformations.";
         }
     </script>
+    <script>
+        function yo(sw) {
+            var pic;
+            if (sw == 0) {
+                pic = "https://randomuser.me/api/portraits/men/30.jpg"
+            } else {
+                pic = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSfFL5E9jzE6nbkSqONaGh-FgCIb3dvojygA&usqp=CAU"
+            }
+            document.getElementById('perfil').src = pic;
+        }
+    </script>
         <button type="button" onclick="document.getElementById('hora').innerHTML = Date()">Día y hora actual</button>
         <button type="button" onclick="document.getElementById('persona').style.display='none'">Ocultar título</button>
         <button type="button" onclick="document.getElementById('gracias').style.display='block'">Agradecimientos</button>
@@ -28,10 +39,12 @@
 <body>
     <button type="button" onclick="myFunction()">Ver presentación</button>
     <button type="button" onclick="myFunction()">About Me</button>
+    <button type="button" onclick="yo(1)">Firma</button>
+    <button type="button" onclick="yo(0)">Foto de perfil</button>
     <section id="color">
         <header> 
         <h1 id="persona">Eduardo Nicolás García</h1>
-        <img class="circular-square" src="https://randomuser.me/api/portraits/men/30.jpg" align="right" title="Eduardo Nicolás García" alt="Foto Eduardo Nicolás García">
+        <img class="circular-square" id="perfil" src="https://randomuser.me/api/portraits/men/30.jpg" align="right" title="Eduardo Nicolás García" alt="Foto Eduardo Nicolás García">
         </header>
         <p>Fecha de nacimiento: 4/8/1975</p>
         <p>edunicogarcia@hotmail.com</p>
